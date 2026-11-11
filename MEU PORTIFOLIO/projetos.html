@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meus Projetos | Aghata Nara</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h2>AN | DEV</h2>
+
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre mim</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+
+            <button id="alternar-tema" type="button">
+                🌙 Modo escuro
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="projetos">
+
+            <h1>Meus Projetos</h1>
+
+            <p>
+                Conheça alguns dos meus trabalhos
+                e minha evolução na programação.
+            </p>
+
+            <!-- FILTROS DOS PROJETOS -->
+            <div class="filtros-projetos">
+
+                <button class="filtro ativo" data-filtro="todos">
+                    Todos
+                </button>
+
+                <button class="filtro" data-filtro="html">
+                    HTML
+                </button>
+
+                <button class="filtro" data-filtro="css">
+                    CSS
+                </button>
+
+                <button class="filtro" data-filtro="javascript">
+                    JavaScript
+                </button>
+
+            </div>
+
+            <!-- LISTA DE PROJETOS -->
+            <div class="lista-projetos">
+
+                <!-- PRIMEIRO CARD -->
+                <article class="card-projeto"
+                         data-tecnologias="html css">
+
+                    <img src="img/projeto1.png"
+                         alt="Imagem do meu primeiro site">
+
+                    <h2>Meu Primeiro Site</h2>
+
+                    <p>
+                        Meu primeiro projeto desenvolvido
+                        utilizando HTML e CSS.
+                    </p>
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+
+                    <a href="#">Ver projeto</a>
+
+                </article>
+
+                <!-- SEGUNDO CARD -->
+                <article class="card-projeto"
+                         data-tecnologias="html css javascript">
+
+                    <img src="img/projeto2.png"
+                         alt="Imagem do meu portfólio">
+
+                    <h2>Portfólio Pessoal</h2>
+
+                    <p>
+                        Site responsivo com animações
+                        e interatividade em JavaScript.
+                    </p>
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+
+                    <a href="#">Ver projeto</a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
